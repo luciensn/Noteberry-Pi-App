@@ -13,6 +13,5 @@ Notes App
 * Back up data by sending a POST request containing your notes in JSON format
 
 <br>
-<br>
 
 *Questions or feedback? Find me on Twitter [@luciensn](https://twitter.com/luciensn)*
