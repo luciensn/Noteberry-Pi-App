@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoteViewController">
+            <connections>
+                <outlet property="bottomConstraint" destination="Ezy-aE-2ic" id="dFa-ln-pRL"/>
+                <outlet property="dateLabel" destination="dU4-j7-VUf" id="TfU-Xe-XMJ"/>
+                <outlet property="shadowImageView" destination="9Et-9x-gaE" id="Eho-T9-tGi"/>
+                <outlet property="shadowTopConstraint" destination="Gs6-my-EIt" id="No6-FA-olV"/>
+                <outlet property="tableHeaderBackgroundTopConstraint" destination="Z45-6I-IAY" id="muG-EI-RvK"/>
+                <outlet property="tableHeaderBackgroundView" destination="80l-MD-ku5" id="ZYh-it-mRB"/>
+                <outlet property="textView" destination="GRf-gK-94H" id="PGS-0g-HAd"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRf-gK-94H">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80l-MD-ku5">
+                    <rect key="frame" x="0.0" y="-256" width="320" height="320"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="320" id="53r-Zt-MGE"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Et-9x-gaE">
+                    <rect key="frame" x="0.0" y="58" width="320" height="6"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="Aym-NH-uyX"/>
+                    </constraints>
+                </imageView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eL2-zp-pEL">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5h0-oH-pUj"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem systemItem="action" id="CAv-tU-gm0">
+                            <connections>
+                                <action selector="sharePressed:" destination="-1" id="Rhf-9k-abL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Pln-fV-P4t"/>
+                        <barButtonItem systemItem="trash" id="SfR-FH-ojc">
+                            <connections>
+                                <action selector="trashPressed:" destination="-1" id="jgh-t1-DwP"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU4-j7-VUf">
+                    <rect key="frame" x="60" y="524" width="200" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="SeJ-qG-469"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GRf-gK-94H" firstAttribute="top" secondItem="1" secondAttribute="top" id="4iU-XZ-dTI"/>
+                <constraint firstItem="GRf-gK-94H" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="EdS-gH-M8G"/>
+                <constraint firstAttribute="bottom" secondItem="GRf-gK-94H" secondAttribute="bottom" id="Ezy-aE-2ic"/>
+                <constraint firstItem="9Et-9x-gaE" firstAttribute="top" secondItem="1" secondAttribute="top" constant="58" id="Gs6-my-EIt"/>
+                <constraint firstItem="9Et-9x-gaE" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="LL6-Fa-mtn"/>
+                <constraint firstAttribute="bottom" secondItem="dU4-j7-VUf" secondAttribute="bottom" id="Sdk-rG-XE5"/>
+                <constraint firstItem="80l-MD-ku5" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="TP2-YD-p8h"/>
+                <constraint firstAttribute="trailing" secondItem="eL2-zp-pEL" secondAttribute="trailing" id="TnJ-kz-r3C"/>
+                <constraint firstAttribute="bottom" secondItem="eL2-zp-pEL" secondAttribute="bottom" id="UUU-DC-acN"/>
+                <constraint firstAttribute="trailing" secondItem="dU4-j7-VUf" secondAttribute="trailing" constant="60" id="XbN-fz-cdf"/>
+                <constraint firstItem="80l-MD-ku5" firstAttribute="top" secondItem="1" secondAttribute="top" constant="-256" id="Z45-6I-IAY"/>
+                <constraint firstAttribute="trailing" secondItem="80l-MD-ku5" secondAttribute="trailing" id="iSe-bU-K35"/>
+                <constraint firstAttribute="trailing" secondItem="9Et-9x-gaE" secondAttribute="trailing" id="ibB-p2-1hj"/>
+                <constraint firstAttribute="trailing" secondItem="GRf-gK-94H" secondAttribute="trailing" id="k43-Jj-tad"/>
+                <constraint firstItem="eL2-zp-pEL" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="mPJ-q6-A81"/>
+                <constraint firstItem="dU4-j7-VUf" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="60" id="xgM-G2-sUs"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
