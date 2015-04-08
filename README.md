@@ -14,4 +14,4 @@ Notes App
 
 <br>
 
-*NOTE: Not optimized for iOS 8*
+*NOTE: Optimized for iOS 7*
