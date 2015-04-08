@@ -14,4 +14,4 @@ Notes App
 
 <br>
 
-*Questions or feedback? Find me on Twitter [@luciensn](https://twitter.com/luciensn)*
+*NOTE: Not optimized for iOS 8*
