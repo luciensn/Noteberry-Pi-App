@@ -2,7 +2,7 @@ Notes App
 =========
 
 <p align="center">
-	<img src="https://dl.dropboxusercontent.com/u/59137317/gh/notes-app.jpg" alt="Screenshots" />
+	<img src="https://github.com/luciensn/Noteberry-Pi-App/blob/master/notes-app.jpg" alt="Screenshots" />
 </p>
 
 ### Features
