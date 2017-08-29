@@ -1,5 +1,5 @@
-Notes App
-=========
+Noteberry Pi App
+================
 
 <p align="center">
 	<img src="https://github.com/luciensn/Noteberry-Pi-App/blob/master/notes-app.jpg" alt="Screenshots" />
@@ -14,4 +14,9 @@ Notes App
 
 <br>
 
-*NOTE: Optimized for iOS 7*
+Code for the simple Java server: [Pi Server](https://github.com/luciensn/pi-server “Pi Server“)
+
+<br>
+
+*NOTE: App optimized for iOS 7*
+
