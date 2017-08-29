@@ -15,6 +15,7 @@ Noteberry Pi App
 <br>
 
 Code for the simple Java server: [Pi Server](https://github.com/luciensn/pi-server)
+
 <br>
 
 *NOTE: App optimized for iOS 7*
