@@ -14,7 +14,7 @@ Noteberry Pi App
 
 <br>
 
-Code for the simple Java server: [Pi Server](https://github.com/luciensn/pi-server “Pi Server“)
+Code for the simple Java server: <a href=“https://github.com/luciensn/pi-server”>Pi Server</a>
 
 <br>
 
